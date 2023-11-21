@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="shortcut icon"
+            href="public/weather-svgrepo-com.svg"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <!-- Google Font - Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        />
+
+        <!-- Title -->
+        <title>Weather App | Carlos Blanco</title>
+    </head>
+    <body>
+        <div class="collapse">
+            <main>
+                <section class="box__search">
+                    <i class="fa-solid fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Enter your location" />
+                    <i class="fa-solid fas fa-search"></i>
+                </section>
+                <section class="box__weather">
+                    <div class="not__found">
+                        <img
+                            src="./public/undraw_location_search_re_ttoj.svg"
+                            alt="404 NOT FOUND"
+                        />
+                        <p>404 Not Found</p>
+                    </div>
+
+                    <div class="weather__details hidden">
+                        <div class="weather__main">
+                            <h1 class="weather__temp"></h1>
+                            <h2 class="weather__status"></h2>
+                        </div>
+                        <div class="weather__secondary">
+                            <p>
+                                <i class="fa-solid fas fas fa-water"></i>
+                                Humedad
+                            </p>
+                            <p>
+                                <i class="fa-solid fas fa-wind"></i>
+                                Velocidad del viento
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
