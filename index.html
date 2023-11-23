@@ -25,6 +25,7 @@
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Title -->
         <title>Weather App | Carlos Blanco</title>
@@ -35,7 +36,8 @@
                 <section class="box__search">
                     <i class="fa-solid fas fa-map-marker-alt"></i>
                     <input type="text" placeholder="Enter your location" />
-                    <i class="fa-solid fas fa-search"></i>
+                    <i class="fa-solid fas fa-search f--box"></i>
+                    <i class="fa fa-close f--box f-box--hidden" style="display: none;"></i>
                 </section>
                 <section class="box__weather">
                     <div class="not__found">
@@ -48,18 +50,19 @@
 
                     <div class="weather__details hidden">
                         <div class="weather__main">
+                            <img src="./public/clear-sky.svg" class="timeImg">
                             <h1 class="weather__temp"></h1>
                             <h2 class="weather__status"></h2>
                         </div>
                         <div class="weather__secondary">
-                            <p>
+                            <div>
                                 <i class="fa-solid fas fas fa-water"></i>
-                                Humedad
-                            </p>
-                            <p>
+                                <span class="humedad">Humidity:</span>
+                            </div>
+                            <div>
                                 <i class="fa-solid fas fa-wind"></i>
-                                Velocidad del viento
-                            </p>
+                                <span class="wind">Wind Speed:</span>
+                            </div>
                         </div>
                     </div>
                 </section>
